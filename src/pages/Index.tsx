@@ -24,9 +24,9 @@ const Index = () => {
           <div className="flex flex-col items-center text-center">
             <div className="mb-6 relative">
               <img
-                src="https://cdn.poehali.dev/files/4ee30d0c-0fc0-4d6d-bbc6-a0a7d79852b7.png"
+                src="https://cdn.poehali.dev/projects/bb18f3b1-9de3-4baa-b7da-bb975d14f497/files/a3fe8728-13b9-491f-b497-83e8b84016f3.jpg"
                 alt="Avatar"
-                className="w-32 h-32 rounded-full object-cover avatar-ring"
+                className="w-32 h-32 rounded-full object-cover avatar-ring-red"
               />
             </div>
 
