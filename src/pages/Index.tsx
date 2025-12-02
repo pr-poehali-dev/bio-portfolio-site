@@ -31,7 +31,7 @@ const Index = () => {
             </div>
 
             <h1 className="text-4xl font-bold text-foreground mb-3">
-              Jumarf
+              Mikoto
             </h1>
 
             <p className="text-xl text-muted-foreground">
