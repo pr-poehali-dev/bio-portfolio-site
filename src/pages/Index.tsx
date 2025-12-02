@@ -4,14 +4,16 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   const socialLinks = [
     { name: "Telegram", icon: "Send", url: "https://t.me/username" },
-    { name: "VK", icon: "MessageCircle", url: "https://vk.com/username" },
-    { name: "AniMedia", icon: "Play", url: "#" },
-    { name: "Yandex Music", icon: "Music", url: "#" },
+    { name: "Spotify", icon: "Music", url: "https://open.spotify.com" },
     { name: "Discord", icon: "MessageSquare", url: "https://discord.com" },
   ];
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4">
+    <div className="min-h-screen bg-background py-12 px-4 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-red-950 to-black opacity-80"></div>
+      <div className="absolute top-20 left-20 w-96 h-96 bg-red-600 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+      <div className="absolute bottom-20 right-20 w-80 h-80 bg-red-800 rounded-full blur-3xl opacity-15 animate-pulse" style={{animationDelay: '1s'}}></div>
+      <div className="relative z-10">
       <div className="container mx-auto max-w-5xl">
         <Card className="card-dark p-12 mb-12 hover-lift">
           <div className="flex flex-col items-center text-center">
@@ -38,7 +40,7 @@ const Index = () => {
             Социальные сети
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center max-w-xl mx-auto">
             {socialLinks.map((social) => (
               <a
                 key={social.name}
@@ -93,6 +95,7 @@ const Index = () => {
             </Card>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
