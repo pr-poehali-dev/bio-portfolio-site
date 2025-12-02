@@ -125,7 +125,8 @@
     width: 120px;
     height: 120px;
     background: hsl(220, 26%, 18%);
-    border: 1px solid hsl(220, 26%, 25%);
+    border: 1px solid hsl(0, 0%, 100%);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -138,7 +139,10 @@
 
   .social-icon:hover {
     background: hsl(220, 26%, 22%);
-    border-color: hsl(234, 89%, 74%);
+    border-color: hsl(0, 100%, 50%);
+    box-shadow:
+      0 0 20px rgba(255, 0, 0, 0.5),
+      0 0 40px rgba(255, 0, 0, 0.2);
     transform: translateY(-4px);
   }
 
