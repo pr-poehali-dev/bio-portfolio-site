@@ -119,6 +119,14 @@
     box-shadow:
       0 0 20px rgba(255, 255, 255, 0.3),
       0 0 40px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .card-dark:hover {
+    border-color: hsl(0, 100%, 50%);
+    box-shadow:
+      0 0 20px rgba(255, 0, 0, 0.5),
+      0 0 40px rgba(255, 0, 0, 0.2);
   }
 
   .social-icon {
