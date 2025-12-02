@@ -114,7 +114,9 @@
 
 @layer utilities {
   .card-dark {
-    background: hsl(220, 26%, 14%);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid hsl(0, 100%, 50%);
     box-shadow:
       0 0 20px rgba(255, 0, 0, 0.4),
@@ -123,6 +125,7 @@
   }
 
   .card-dark:hover {
+    background: rgba(0, 0, 0, 0.6);
     border-color: hsl(0, 100%, 60%);
     box-shadow:
       0 0 25px rgba(255, 0, 0, 0.6),
@@ -132,7 +135,9 @@
   .social-icon {
     width: 120px;
     height: 120px;
-    background: hsl(220, 26%, 18%);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid hsl(0, 100%, 50%);
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
     border-radius: 1rem;
@@ -146,7 +151,7 @@
   }
 
   .social-icon:hover {
-    background: hsl(220, 26%, 22%);
+    background: rgba(0, 0, 0, 0.6);
     border-color: hsl(0, 100%, 50%);
     box-shadow:
       0 0 20px rgba(255, 0, 0, 0.5),
