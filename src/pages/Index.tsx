@@ -12,19 +12,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background py-12 px-4">
-      <div className="absolute top-8 right-8">
-        <div className="views-badge px-4 py-2 rounded-lg flex items-center gap-2">
-          <Icon name="Eye" size={20} className="text-muted-foreground" />
-          <span className="text-foreground font-medium">1488</span>
-        </div>
-      </div>
-
       <div className="container mx-auto max-w-5xl">
         <Card className="card-dark p-12 mb-12 hover-lift">
           <div className="flex flex-col items-center text-center">
             <div className="mb-6 relative">
               <img
-                src="https://cdn.poehali.dev/projects/bb18f3b1-9de3-4baa-b7da-bb975d14f497/files/a3fe8728-13b9-491f-b497-83e8b84016f3.jpg"
+                src="https://cdn.poehali.dev/files/075728c1-4161-48ad-82f8-d728d6d0c26a.jpg"
                 alt="Avatar"
                 className="w-32 h-32 rounded-full object-cover avatar-ring-red"
               />
@@ -65,87 +58,40 @@ const Index = () => {
 
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-foreground text-center mb-8">
-            Рекомендации
+            Интересы
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="card-dark overflow-hidden hover-lift">
-              <img
-                src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=600&fit=crop"
-                alt="Recommendation"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Любимое аниме
-                </h3>
-                <p className="text-muted-foreground">
-                  Моя коллекция любимых аниме-сериалов и фильмов
-                </p>
-              </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="card-dark p-8 text-center hover-lift">
+              <Icon name="Music" size={48} className="text-red-500 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                Музыка
+              </h3>
+              <p className="text-muted-foreground">
+                Треки, которые я слушаю каждый день
+              </p>
             </Card>
 
-            <Card className="card-dark overflow-hidden hover-lift">
-              <img
-                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&h=600&fit=crop"
-                alt="Music"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Музыкальные плейлисты
-                </h3>
-                <p className="text-muted-foreground">
-                  Треки, которые я слушаю каждый день
-                </p>
-              </div>
+            <Card className="card-dark p-8 text-center hover-lift">
+              <Icon name="Gamepad2" size={48} className="text-red-500 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                Игры
+              </h3>
+              <p className="text-muted-foreground">
+                Мои любимые игры и стримы
+              </p>
             </Card>
 
-            <Card className="card-dark overflow-hidden hover-lift">
-              <img
-                src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=600&fit=crop"
-                alt="Gaming"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Игры
-                </h3>
-                <p className="text-muted-foreground">
-                  Мои любимые игры и стримы
-                </p>
-              </div>
-            </Card>
-
-            <Card className="card-dark overflow-hidden hover-lift">
-              <img
-                src="https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=800&h=600&fit=crop"
-                alt="Art"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Творчество
-                </h3>
-                <p className="text-muted-foreground">
-                  Мои работы и художественные проекты
-                </p>
-              </div>
+            <Card className="card-dark p-8 text-center hover-lift">
+              <Icon name="Palette" size={48} className="text-red-500 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                Творчество
+              </h3>
+              <p className="text-muted-foreground">
+                Мои работы и проекты
+              </p>
             </Card>
           </div>
-        </div>
-
-        <div className="text-center">
-          <Card className="card-dark p-8">
-            <h2 className="text-2xl font-bold text-foreground mb-4">
-              Обо мне
-            </h2>
-            <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Привет! Я увлекаюсь аниме, музыкой и творчеством. 
-              Люблю делиться своими интересами с друзьями и находить единомышленников. 
-              Здесь вы найдете ссылки на все мои социальные сети и проекты.
-            </p>
-          </Card>
         </div>
       </div>
     </div>
