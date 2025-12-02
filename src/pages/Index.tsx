@@ -3,9 +3,9 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   const socialLinks = [
-    { name: "Telegram", icon: "Send", url: "https://t.me/username" },
-    { name: "Spotify", icon: "Music", url: "https://open.spotify.com" },
-    { name: "Discord", icon: "MessageSquare", url: "https://discord.com" },
+    { name: "Telegram", icon: "Send", url: "https://t.me/Xyecoc_Mikoto228" },
+    { name: "Spotify", icon: "Music", url: "https://open.spotify.com/user/mikotoreal" },
+    { name: "Discord", icon: "MessageSquare", url: "https://discord.com/users/mikoto_reincarnation" },
   ];
 
   return (
@@ -30,7 +30,7 @@ const Index = () => {
             </h1>
 
             <p className="text-xl text-muted-foreground">
-              Меньше чем три♡3
+              I tired of this place
             </p>
           </div>
         </Card>
